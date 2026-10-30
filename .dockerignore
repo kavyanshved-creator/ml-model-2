@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.git
+.gitignore
+.github/
+*.ipynb
+.ipynb_checkpoints/
+advertising_cost_vs_sales_500.csv
+model_2.yml
+*.log
+
