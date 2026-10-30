@@ -20,10 +20,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/marks-api:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/sales-api:latest .
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/marks-api:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/sales-api:latest
 
       - name: Trigger Render Deploy
         run: curl --fail --show-error --request POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
